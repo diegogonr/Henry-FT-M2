@@ -1,0 +1,20 @@
+{
+  "name": "Clases",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack-cli": "^5.1.4",
+    "wepack-cli": "0.0.1-security"
+  },
+  "devDependencies": {
+    "webpack": "^5.87.0"
+  }
+}
