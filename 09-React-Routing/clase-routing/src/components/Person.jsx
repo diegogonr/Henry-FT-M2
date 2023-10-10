@@ -2,7 +2,7 @@ const Person=() =>{
 
     return(
         <>
-            <h1> Cohorte </h1>
+            <h1> Cohorte componente person</h1>
         </>
     )
 }

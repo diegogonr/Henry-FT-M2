@@ -34,7 +34,7 @@ let bob ={
     }
 }
 bob.friends.push("diego")
-bob.friends.push("karol")
+bob.friends.push("JUAN")
 
 bob.printf()
 bob.printf2()    

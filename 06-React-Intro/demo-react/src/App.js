@@ -19,7 +19,7 @@ function App() {
       {/* se paasan propiedades, los numeros y variables entrellaves  */}
       <Alumnos alumnos={alumnosList} total={400}/>  
       <Boton_funcional texto= "esto es un boton"/>
-      <Boton_clase texto= "esto es un boton con clase"/>
+      <Boton_clase texto= "esto es un boton de clase"/>
 
     </div>
   );

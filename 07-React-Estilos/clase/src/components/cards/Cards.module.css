@@ -1,0 +1,19 @@
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: blue;
+    padding: 1rem;
+    border: 1px solid rgb(255, 0, 0);
+    color: white;
+    gap: 2rem;
+}
+
+.card {
+    width: fit-content;
+    padding: 0 1rem;
+    height: 10rem;
+    background-color: darkgoldenrod;
+    border-radius: 2rem;
+}

@@ -55,7 +55,7 @@ ToDo.prototype.completeToDo = function () {
 //    7) Agregar 'toDoText' como hijo de 'toDoShell'
 //    8) Devolver la variable toDoShell
 
-function buildToDo (todo, index){             //{ todo: ToDo{description:'hola', complete: false} 
+function buildToDo (todo, index){             //{ todo: ToDo{description:'hola', complete: false} , index
   // Tu código acá:
   const toDoShell= document.createElement('div')      //<div> </div>
   toDoShell.className ='toDoShell'                     //agrega clase
@@ -73,16 +73,15 @@ function buildToDo (todo, index){             //{ todo: ToDo{description:'hola',
     //   <span id =0>hola</span>
     // </div>
 
+  console.log(" antes buildToDo")
 //   3) En la función 'buildToDo' agregar un 'click' event listener al elemento 'toDoText', pasándole
 //      esta función como callback
   toDoText.addEventListener ('click', completeToDo)
+  console.log("buildToDo")
   return toDoShell
 }
 
-const fun = function () {
-  console.log("hola")
-  
-}
+
 
 // La función 'buildToDos' debe crear un array de objetos toDo y devolverlo
 // Recibirá como parámetro un array de objetos ToDo
@@ -119,6 +118,7 @@ function buildToDos(toDos) {
 
 function displayToDos() {
   // Tu código acá:
+  console.log("display")
   let toDoContainer = document.querySelector ('#toDoContainer')
   toDoContainer.innerHTML =''                        //agrega texto
   let array_buildToDos = buildToDos(toDoItems)
@@ -168,6 +168,8 @@ Button.addEventListener ('click', addToDo)  //solo se pasa la funcion sin invoca
 //      esta función como callback
 
 function completeToDo(event) {
+  console.log("completeToDo")
+
   // DESCOMENTAR LA SIGUIENTE LINEA
   const index = event.target.id;  //target (elemento con el que interactua) es propiedad de event, e id es propiedad de id
   // Tu código acá:
